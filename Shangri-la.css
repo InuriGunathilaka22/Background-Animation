@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;
+    margin-top: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
+
+/* Style the separator */
+.navlinks li:not(:last-child)::after {
+    content: " | ";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+  
+.flex_space {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------header---------*/
+header {
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 20px;
+}
+  
+header img {
+    margin: 20px 0;
+}
+  
+header ul {
+    display: inline-block;
+}
+  
+header ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #7fc142;
+}
+  
+header i {
+    margin: 0 20px;
+}
+
+header .navlinks span {
+    display: none;
+  }
+
+/* Add this CSS to your existing CSS file or in a separate file */
+
+.second-navbar {
+    background-color: #333;
+    color: #fff;
+    width: 100%; /* Set the width to take up the full available width */
+    height: 40px; /* Set the height to your desired value in pixels */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .second-navbar a:hover {
+    background-color: #555;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #555;
+  }
+
+/*--------header---------*/
+/*--------home---------*/
+.main {
+    height: 100vh;
+    color: #fff;
+  }
+
+/* Apply a semi-transparent overlay to the background images */
+.item img {
+    position: relative;
+    opacity: 1; /* Adjust the opacity level as needed (0.7 means 70% opacity) */
+}
+
+
+  
+.main img {
+    width: 100%;
+    height: 100vh;
+}
+  
+.main .text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+  
+.main .text h1 {
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+}
+  
+.main p {
+    margin: 20px 0;
+}
+  
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+/* Style for the "Find a Hotel" button */
+.find-hotel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 0.5px solid #fff; /* Set a 1px white border */
+    border-radius: 1px;
+    text-align: center; /* Center text horizontally */
+    line-height: 0.5; /* Center text vertically */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+/*--------------book--------*/

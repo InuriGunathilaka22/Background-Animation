@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Arial;
+    color: rgb(124, 21, 128);
+}
+
+.title {
+    font-size: 4.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+header {
+    text-align: center;
+}
+
+.dropdown {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dropdown select {
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 1px;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 30%;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destination {
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 750px; /* Set the width to a smaller value */
+    height: 600px; /* Set the height to a larger value */
+}
+
+
+.textbox {
+    position: absolute;
+    right: -17%;
+    top: 60%;
+    background-color: white;
+    color: #080808;
+    padding: 60px;
+    border-radius: 1px;
+    width: 47%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.textbox2 {
+    margin-top: 10px; /* Add margin above the button */
+    text-align: left;
+}
+
+
+.discover-button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-family: 'Brygada 1918', sans-serif; /* Set the font-family to 'Brygada 1918' */
+    font-weight: 500; /* Semi-bold font weight */
+    font-style: italic;
+    font-size: 18px; /* Adjust the font size as needed */
+    
+}
+
+/* Custom styles for destination title and paragraphs */
+.destination-title {
+    font-family: 'Brygada 1918', sans-serif; /* Set the font-family to 'Brygada 1918' */
+    font-weight: 500; /* Semi-bold font weight */
+    font-style: italic;
+    font-size: 25px; /* Adjust the font size as needed */
+    color: purple;
+    margin-bottom: 50px;
+    text-align: left;
+
+}
+
+.destination-paragraph {
+    color: #777; /* Light black text */
+    text-indent: 7px; /* Add indentation */
+    line-height: 1.5; /* Increase line spacing */
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Add CSS for other destinations as needed */
+#cinnamon-life {
+    display: block; /* Display the Cinnamon Life destination by default */
+}
