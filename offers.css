@@ -1,0 +1,94 @@
+/* Reset some default styles for better consistency */
+body, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the card container vertically */
+    justify-content: center; /* Center align the card container horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center align cards within the container */
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc(26% - 30px); /* Adjust the card width and spacing as needed */
+    margin: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.description {
+    padding: 10px;
+    flex-grow: 1; /* Allow the description to take up remaining vertical space */
+    display: flex;
+    flex-direction: column; /* Ensure paragraphs and button stack vertically */
+    justify-content: space-between; /* Space evenly between paragraphs and button */
+    align-items: center; /* Center-align content horizontally */
+}
+
+/* Adjust margin for paragraphs to control spacing */
+.description p {
+    margin: 10px 0;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.normal {
+    font-size: 16px;
+}
+
+.bold:last-child {
+    font-weight: bold;
+    font-size: medium;
+    color: brown;
+    display: inline-block;
+    margin-top: 10px; /* Add space between the last paragraph and the button */
+}
+
+.view-details-button {
+    color: brown;
+    border: 1px solid brown;
+    padding: 5px 10px;
+    text-decoration: none;
+    align-self: center; /* Center-align the button horizontally */
+    margin-top: 10px; /* Add space between button and paragraphs */
+    transition: box-shadow 0.3s ease;
+}
+
+.view-details-button:hover {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
